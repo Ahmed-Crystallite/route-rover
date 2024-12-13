@@ -6,7 +6,7 @@ export default function Home() {
       <Hero/>
       <Features/>
       <About/>
-      {/* <OurApp/> */}
+      <OurApp/>
       <Reviews/>
       <BestWay/>
       <Contact/>

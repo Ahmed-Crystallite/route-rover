@@ -36,7 +36,7 @@ export default function AutoPlaySlider({
 
   return (
     <div className="relative z-10 py-12">
-        <Image src={Screen} alt="screen" className="absolute z-10 inset-0 mx-auto" draggable={false}/>
+        <Image src={Screen} alt="screen" className="2xl:block hidden absolute z-10 inset-0 w-max h-max object-center object-contain mx-auto" draggable={false}/>
       <div className={`overflow-hidden ${wrapperClasses}`} ref={emblaRef}>
         <div className={emblaWrapper}>{children}</div>
       </div>

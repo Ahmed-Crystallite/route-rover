@@ -8,7 +8,7 @@ import { CTA } from "./index"
 const BestWay = () => {
   return (
     <section>
-      <div className="relative z-10 lg:pt-[80px] md:pt-[60px] pt-[50px] sm:pb-0 pb-[50px] sm:!bg-transparent bg-[linear-gradient(87deg,_rgba(59,253,131,1)_0%,_rgba(252,250,71,1)_100%)]">
+      <div className="relative z-20 lg:pt-[80px] md:pt-[60px] pt-[50px] sm:pb-0 pb-[50px] sm:!bg-[linear-gradient(87deg,_rgba(59,253,131,0)_0%,_rgba(252,250,71,0)_100%)] bg-[linear-gradient(87deg,_rgba(59,253,131,1)_0%,_rgba(252,250,71,1)_100%)]">
         <div className="container">
           <div className="relative z-10 sm:px-5 sm:pt-10 sm:py-0">
             <span className="sm:absolute sm:-z-10 sm:inset-0 sm:block hidden sm:bg-[linear-gradient(87deg,_rgba(59,253,131,1)_0%,_rgba(252,250,71,1)_100%)] lg:h-[87%] sm:h-full sm:mt-auto sm:w-full sm:rounded-[30px]"></span>

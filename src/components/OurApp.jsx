@@ -20,15 +20,15 @@ import ScreenShot7 from "media/screenshots/guardian/7.png"
 const OurApp = () => {
   return (
     <section>
-      <div className="relative z-10 py-[100px]">
+      <div className="relative z-10 lg:py-[100px] md:py-[80px] py-[60px]">
         <div className="container">
           <Tabs defaultValue="guardian">
-            <div className="flex items-center justify-between mb-10">
+            <div className="flex flex-wrap gap-y-10 items-center justify-between mb-10">
               <div>
-                <h2 className="text-[36px] leading-tight font-extrabold mb-3 text-black">
+                <h2 className="lg:text-[36px] md:text-[30px] text-[22px] leading-tight font-extrabold mb-3 text-black">
                   App Screenshots Know Properly
                 </h2>
-                <p className="text-lg leading-tight font-normal">
+                <p className="lg:text-lg md:text-base text-sm leading-tight font-normal 2xl:max-w-full max-w-[600px]">
                   Lorem ipsum dolor sit amet consectetur. Libero id in maecenas
                   duis eget vulputate enim ut.
                 </p>
@@ -40,7 +40,7 @@ const OurApp = () => {
             </div>
             <TabsContent value="guardian">
               <AutoPlaySlider
-                emblaWrapper="flex"
+                emblaWrapper="flex items-center"
                 align="center"
                 arrowsCss="!justify-center mt-16"
               >
@@ -61,9 +61,9 @@ const OurApp = () => {
             </TabsContent>
             <TabsContent value="driver">
               <AutoPlaySlider
-                emblaWrapper="flex"
+                emblaWrapper="flex items-center"
                 align="center"
-                arrowsCss="!justify-center"
+                arrowsCss="!justify-center mt-16"
               >
                 {[
                   ScreenShot1,
