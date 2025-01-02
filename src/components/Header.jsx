@@ -45,7 +45,7 @@ const Header = () => {
     }
   }, [])
   return (
-    <header className={`z-50 bg-primary/85 fixed w-full h-max transition-all duration-300 ease-in-out ${isSticky ? 'fixed bg-primary/85 top-0 left-0 right-0 backdrop-blur-sm' : ''} ${isIdle ? '!-top-full' : ' '}`}>
+    <header className={`z-50 bg-transparent fixed w-full h-max transition-all duration-300 ease-in-out ${isSticky ? 'fixed !bg-primary/85 top-0 left-0 right-0 backdrop-blur-sm' : ''} ${isIdle ? '!-top-full' : ' '}`}>
       <div className="bg-transparent md:bg-opacity-40 py-5 relative z-10">
         <div className="container">
           <div className="grid grid-cols-12 items-center md:text-white text-black">

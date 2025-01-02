@@ -3,7 +3,7 @@ import { FrontEndForm } from "./index"
 
 const Contact = () => {
   return (
-    <section>
+    <section id="contact">
       <div className="relative z-10 -mt-[180px] bg-[#f7f7f7] md:pt-[300px] pt-[250px] pb-[40px]">
         <div className="container">
           <div className="grid grid-cols-12 gap-x-5 gap-y-10">

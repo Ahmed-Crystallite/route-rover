@@ -20,7 +20,7 @@ const Footer = () => {
                 </h4>
                 <ul>
                   {[
-                    ["#home", "Home"],
+                    ["#", "Home"],
                     ["#about", "About"],
                     ["#features", "Features"],
                     ["#contact", "Contact"],
@@ -40,16 +40,18 @@ const Footer = () => {
                 </h4>
                 <ul>
                   {[
-                    ["#", "Facebook"],
-                    ["#", "Instagram"],
-                    ["#", "LinkedIn"],
-                    ["#", "Twitter"],
+                    ["https://www.facebook.com/", "Facebook"],
+                    ["https://www.instagram.com/", "Instagram"],
+                    ["https://us.linkedin.com/", "LinkedIn"],
+                    ["https://x.com/?lang=en", "Twitter"],
                   ].map(([link, text], i) => (
                     <li
                       key={i}
                       className="text-[15px] text-white leading-tight font-medium mb-3"
                     >
-                      <a href={link}>{text}</a>
+                      <a href={link} target="_blank">
+                        {text}
+                      </a>
                     </li>
                   ))}
                 </ul>
@@ -82,16 +84,18 @@ const Footer = () => {
           <div className="flex flex-wrap items-center md:justify-between justify-center gap-y-5 py-5">
             <ul className="flex items-center justify-between gap-x-5">
               <li className="block text-base font-medium text-white leading-tight">
-                <Link href="/">Terms of Service</Link>
+                <Link href="/terms-of-service">Terms of Service</Link>
               </li>
               <li className="block text-base font-medium text-white leading-tight">
                 <span className="block">|</span>
               </li>
               <li className="block text-base font-medium text-white leading-tight">
-                <Link href="/">Privacy Policy</Link>
+                <Link href="/privacy-policy">Privacy Policy</Link>
               </li>
             </ul>
-            <span className="block text-white/50 text-base font-medium leading-tight">© All Rights Reserved 2024 -  Route Rover</span>
+            <span className="block text-white/50 text-base font-medium leading-tight">
+              © All Rights Reserved 2024 - Route Rover
+            </span>
           </div>
         </div>
       </div>

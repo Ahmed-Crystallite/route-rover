@@ -17,6 +17,7 @@ export default function AutoPlaySlider({
   children,
   arrows = true,
   arrowsCss,
+  screen = false,
 }) {
   const plugins = [
     ClassNames(),
@@ -36,7 +37,14 @@ export default function AutoPlaySlider({
 
   return (
     <div className="relative z-10 py-12">
-        <Image src={Screen} alt="screen" className="2xl:block hidden absolute z-10 inset-0 w-max h-max object-center object-contain mx-auto" draggable={false}/>
+      {screen && (
+        <Image
+          src={Screen}
+          alt="screen"
+          className="block absolute z-10 inset-0 2xl:w-max 2xl:h-[695px] xl:w-[265px] xl:h-[600px] lg:w-[222px] lg:h-[518px] md:w-[285px] md:h-[640px] sm:w-[320px] sm:h-[705px] w-[57%] h-[83%] object-center object-contain mx-auto"
+          draggable={false}
+        />
+      )}
       <div className={`overflow-hidden ${wrapperClasses}`} ref={emblaRef}>
         <div className={emblaWrapper}>{children}</div>
       </div>

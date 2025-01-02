@@ -42,7 +42,7 @@ const formSchema = z.object({
   message: z.string(),
 })
 
-const FrontEndForm = ({ label = true,css }) => {
+const FrontEndForm = ({ label = true, css }) => {
   const [loading, setLoading] = useState(false)
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -157,6 +157,7 @@ const FrontEndForm = ({ label = true,css }) => {
         <button
           type="submit"
           className="bg-secondary text-lg leading-tight font-semibold text-primary h-[60px] w-[160px] rounded-full mt-3"
+          disabled={loading}
         >
           {loading ? "Loading..." : "Submit"}
         </button>

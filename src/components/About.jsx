@@ -9,7 +9,7 @@ import { CTA } from "./index"
 
 const About = () => {
   return (
-    <section>
+    <section id="about-us">
       <div className="relative z-10 bg-[#EEF1F8] bg-opacity-40 md:py-[60px] py-[50px]">
         <div className="container">
           <div className="lg:grid lg:grid-cols-2 flex flex-wrap flex-col-reverse items-center gap-10">

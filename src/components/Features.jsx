@@ -5,7 +5,7 @@ import Screen from "media/home/screen1.png"
 
 const Features = () => {
   return (
-    <section>
+    <section id="features">
       <div className="relative z-10 lg:pt-[140px] lg:pb-[100px] md:py-[80px] py-[50px]">
         <div className="container">
           <div className="text-center max-w-[700px] mx-auto xl:pb-[150px] lg:pb-[80px] pb-[40px]">
